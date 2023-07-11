@@ -1,0 +1,11 @@
+<div class="input-container">
+     <div>
+        <input type="text" class="input-field" placeholder="Type your message..." [(ngModel)]="message">
+       <button class="button" (click)="sendMessage()" *ngIf="!isLoading">send</button>
+     </div>
+     <p class="copy-right"><a target="_blank" href="https://chansocheatsok.vercel.app/">©️ Chansocheat Sok</a></p>
+</div>
+
+<div class="loading-message" *ngIf="isLoading">
+    Bot is responding...
+  </div>

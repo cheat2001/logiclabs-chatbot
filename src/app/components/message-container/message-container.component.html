@@ -1,0 +1,12 @@
+<div class="message-container">
+   <div class="message-block">
+    <ng-container *ngFor="let chat of chats">
+        <ng-container *ngIf="chat.isUser">
+            <p class="user-message"><span>🙎 : </span>{{chat.message}}</p>
+        </ng-container>
+        <ng-container *ngIf="!chat.isUser">
+            <p class="bot-message"><span>💻</span>{{chat.message}}</p>
+        </ng-container>
+    </ng-container>
+   </div>
+</div>

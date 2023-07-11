@@ -1,0 +1,66 @@
+@import "../../../color.scss";
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid $accent-color;
+   h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .img{
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      background-image: url("../../../assets/LogicLabs-Full-Logo-Filled-black-V2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+   }
+
+    .button{
+      position: absolute;
+      right: 10px;
+      background-color: $primary-color;
+      color: $secondary-color;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 2px solid $accent-color;
+      
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+      
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 3px $accent-color;
+      }
+    }
+  }
+
+
+
+  @media screen and (max-width:500px) {
+  .header{
+    justify-content: space-evenly;
+
+    .button{
+      position: relative;
+    }
+  }
+   
+    
+  }

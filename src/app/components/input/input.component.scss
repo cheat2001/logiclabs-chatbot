@@ -1,0 +1,67 @@
+@import "../../../color.scss";
+.input-container{
+  position: sticky;
+  bottom: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background:$primary-color ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $accent-color;
+    flex-direction: column;
+    gap: 10px;
+
+    .input-field {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        width: 300px;
+        
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 3px $accent-color;
+        }
+      }
+
+
+      .button {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid $accent-color;
+        
+        &:hover {
+          background-color: darken($accent-color, 10%);
+        }
+        
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 3px $accent-color;
+        }
+      }
+
+      .copy-right{
+        a{
+          color: $secondary-color;
+        }
+      }
+}
+
+
+.loading-message{
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
