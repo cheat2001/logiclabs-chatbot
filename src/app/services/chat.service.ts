@@ -5,8 +5,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChatService {
-  private apiUrl = 'https://open-ai21.p.rapidapi.com/conversation';
-  private apiKey = '177786e8e8mshc55f0d4cae24f8bp197db9jsn735a198c3d04';
+  private apiUrl = 'https://open-ai21.p.rapidapi.com/conversationgpt35';
+  private apiKey = '27dd92e7d9msh7fce29b9b8cfd30p1f190djsnd4fea590718d';
   chat:any[]=[];
   private localStorageKey = 'chatData';
 

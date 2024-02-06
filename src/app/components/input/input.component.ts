@@ -17,9 +17,9 @@ export class InputComponent {
     this.isLoading=true;
 
     this.chatService.getBotResponse(this.message).subscribe(res=>{
-      this.chatService.addMessage(res.ChatGPT,false);
+      this.chatService.addMessage(res.result,false);
       this.isLoading = false;
-      console.log(res.ChatGPT);
+      console.log(res.result);
       this.message="";
       location.reload();
     },
